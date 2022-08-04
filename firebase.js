@@ -5,21 +5,22 @@ import * as firebase from "firebase";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCnvyl6G91CyJ6kSEWC2xa6fcxRLpqFjmA",
-  authDomain: "react-native-capstone-ce0e3.firebaseapp.com",
-  projectId: "react-native-capstone-ce0e3",
-  storageBucket: "react-native-capstone-ce0e3.appspot.com",
-  messagingSenderId: "640273645217",
-  appId: "1:640273645217:web:691df2b8d92f3115bfbae0"
+  apiKey: "AIzaSyCLA4vnLFaVow25ylLUkb57NhmnN6qk1vE",
+  authDomain: "fir-auth-65294.firebaseapp.com",
+  projectId: "fir-auth-65294",
+  storageBucket: "fir-auth-65294.appspot.com",
+  messagingSenderId: "105428798939",
+  appId: "1:105428798939:web:49a9375f32ea94d4dfebfe"
 };
 
 // Initialize Firebase
 let app;
-if(firebase.apps.length === 0) {
-  app = initializeApp(firebaseConfig)
+if (firebase.apps.length === 0) {
+  app = firebase.initializeApp(firebaseConfig);
 } else {
   app = firebase.app()
 }
+
 const auth = firebase.auth()
 
 export { auth };
